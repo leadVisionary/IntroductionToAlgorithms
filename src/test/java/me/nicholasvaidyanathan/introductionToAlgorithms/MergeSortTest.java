@@ -35,4 +35,20 @@ public class MergeSortTest {
         final int[] expected = new int[] { 1, 2, 2, 3, 4, 5, 6, 7};
         Assert.assertArrayEquals(expected, numbers);
     }
+
+    @Test
+    public void figure_2_4_decreasing() {
+        final int[] numbers = new int[] { 5, 2, 4, 7, 1, 3, 2, 6};
+        MergeSortDecreasingOrder.sort(numbers);
+        final int[] expected = new int[] { 7, 6, 5, 4, 3, 2, 2, 1};
+        Assert.assertArrayEquals(expected, numbers);
+    }
+
+    @Test
+    public void figure_2_3_decreasing() {
+        final int[] numbers = new int[] { 2, 4, 5, 7, 1, 2, 3, 6};
+        MergeSortDecreasingOrder.sort(numbers);
+        final int[] expected = new int[] { 7, 6, 5, 4, 3, 2, 2, 1};
+        Assert.assertArrayEquals(expected, numbers);
+    }
 }
