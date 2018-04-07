@@ -23,7 +23,7 @@ public class InsertionSortTest {
     @Test
     public void exercise_2_1_2() {
         final int[] numbers = new int[] { 5, 2, 4, 6, 1, 3};
-        InsertionSort.decreasing(numbers);
+        InsertionSortDecreasingOrder.sort(numbers);
         final int[] expected = new int[] { 6, 5, 4, 3, 2, 1};
         Assert.assertArrayEquals(expected, numbers);
     }
